@@ -1,0 +1,69 @@
+<!--
+    PB1-L2 POST IT
+    
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Post It</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="postit.css">
+
+    <!-- CryptoJS 4.2.0 from Cloudflare CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>POST IT</h1>
+        <p class="subtitle">Create and Encrypt Your Posts</p>
+        <!-- User details -->
+        <div id="userSection">
+            <h2>User Information</h2>
+            <input type="text" id="fullname" placeholder="Full Name" >
+            <input type="date" id="birthday">
+            <input type="text" id="yearlevel" placeholder="Year Level">
+            <input type="text" id="gender" placeholder="Gender">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password" >
+            <!-- Save the user details -->
+            <button onclick="saveUser()">
+                Continue
+            </button>
+
+        </div>
+        <!-- area for creating posts -->
+        <div id="postSection" class="hidden">
+            <h2>Create a Post</h2>
+            <!-- Caption only -->
+            <textarea id="post" placeholder="Write your caption..."
+            ></textarea>
+            <!--add the post-->
+            <button onclick="addPost()"> POST </button>
+
+        </div>
+        <!-- Show Messages to the user -->
+        <p id="message"></p>
+        <!-- displays all the Posts -->
+        <div class="thread">
+
+            <h2>Post Thread</h2>
+
+            <div id="posts"></div>
+
+        </div>
+
+    </div>
+
+    <!-- connect the JavaScript file -->
+    <script src="postit.js"></script>
+
+</body>
+
+</html>

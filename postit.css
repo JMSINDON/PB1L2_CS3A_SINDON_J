@@ -1,0 +1,134 @@
+/*
+    PB1-L2 POST IT
+    Simple and clean design for the Post It application.
+*/
+
+/* Page design */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
+}
+
+/* Main title */
+h1 {
+    text-align: center;
+    color: #4b0082;
+    margin-bottom: 5px;
+}
+
+/* Subtitle */
+.subtitle {
+    text-align: center;
+    color: #666666;
+    margin-bottom: 25px;
+}
+
+/* Section titles */
+h2 {
+    color: #4b0082;
+}
+
+/* Input fields */
+input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    margin-bottom: 12px;
+    border: 1px solid #aaaaaa;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Post textarea */
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 11px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4b0082;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #6a1b9a;
+}
+
+/* Status message */
+#message {
+    text-align: center;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* Hide section */
+.hidden {
+    display: none;
+}
+
+/* Post thread */
+.thread {
+    margin-top: 25px;
+}
+
+/* Individual post */
+.post-card {
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fafafa;
+}
+
+/* Original post title */
+.original-title {
+    font-weight: bold;
+    color: #4b0082;
+    margin-bottom: 8px;
+}
+
+/* Original post content */
+.original-content {
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+/* Encrypted title */
+.encrypted-title {
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Encrypted data */
+.encrypted-content {
+    background-color: #eeeeee;
+    padding: 10px;
+    border-radius: 5px;
+    word-break: break-all;
+    font-family: monospace;
+    font-size: 12px;
+}
